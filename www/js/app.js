@@ -32,13 +32,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+  .state('app.contato', {
+  url: '/contato',
+  abstract: true,
+  templateUrl: 'templates/contato.html',
+  controller: 'AppCtrl'
+})
+
   .state('app.busca', {
     url: '/busca',
     views: {
       'menuContent': {
         templateUrl: 'templates/busca.html'
       }
-    }
+    },
+    controller: "AlturaCtrl"
   })
 
   .state('app.facial', {

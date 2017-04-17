@@ -1,5 +1,31 @@
-<ion-view view-title="Aqui que muda ali?">
+<ion-view view-title="Pesquisar">
   <ion-content>
-    <h1>Busca</h1>
+
+    <label class="item item-input">
+      <input type="text" ng-model="nome" placeholder="Nome" />
+    </label>
+
+    <label class="item item-input">
+    <input type="text" ng-model="sobrenome" placeholder="Sobrenome" />
+  </label>
+
+
+  <span ng-controller="AlturaCtrl" >
+      <label class="padding item range range-positive" >
+
+        Altura: {{altura/100}} {{metragem}}
+     </label>
+    <label class="item range range-positive">
+      1.00m
+      <input type="range" ng-model="altura" min={{min}}  max={{max}}>
+      2.20m<br />
+
+    </label>
+  </span>
+
+
+
+
+
   </ion-content>
 </ion-view>
