@@ -53,18 +53,7 @@ app.controller('PlaylistsCtrl', function($scope) {
 })
 
 app.controller("AlturaCtrl", function($scope){
-//TODO:padrão do range e controle de fluxo
-    $scope.min =100;
-    $scope.max = 220;
 
-var metro = function(){
-    if($scope.min){
-      $scope.metragem = "metro";
-    }
-    else{
-      $scope.metragem = "metros";
-    }
-}
 });
 
 app.controller('PlaylistCtrl', function($scope, $stateParams) {

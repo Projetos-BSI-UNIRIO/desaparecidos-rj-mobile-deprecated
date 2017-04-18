@@ -9,19 +9,11 @@
     <input type="text" ng-model="sobrenome" placeholder="Sobrenome" />
   </label>
 
+  <label class="item item-input">
+  <input type="text" ng-model="altura" placeholder="Altura aproximada em metros" />
+  </label>
 
-  <span ng-controller="AlturaCtrl" >
-      <label class="padding item range range-positive" >
 
-        Altura: {{altura/100}} {{metragem}}
-     </label>
-    <label class="item range range-positive">
-      1.00m
-      <input type="range" ng-model="altura" min={{min}}  max={{max}}>
-      2.20m<br />
-
-    </label>
-  </span>
 
 
 
