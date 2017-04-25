@@ -1,23 +1,25 @@
-#about-page{
+ion-content{
     background-color: #000;
+    color: #FFF;
 }
 
-#about-page .text-box{
-    text-align: center;
-    padding: 5%;
+.bar.bar-stable, .nav-menu{
+    background-color: #F7D30A;
 }
 
 #about-page .text-box{
     font-variant: small-caps;
+    text-align: center;
+    padding: 5%;
 }
 
-#about-page #organization-name{
+#about-page .organization-name{
     font-size: 150%;
     font-weight: bold;
     color: #F7D30A;
 }
 
-#about-page #organization-info{
+#about-page .organization-info{
     color: #FFF;
 }
 
