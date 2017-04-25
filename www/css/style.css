@@ -1,1 +1,26 @@
-/* Empty. Add your own CSS if you like */
+#about-page{
+    background-color: #000;
+}
+
+#about-page .text-box{
+    text-align: center;
+    padding: 5%;
+}
+
+#about-page .text-box{
+    font-variant: small-caps;
+}
+
+#about-page #organization-name{
+    font-size: 150%;
+    font-weight: bold;
+    color: #F7D30A;
+}
+
+#about-page #organization-info{
+    color: #FFF;
+}
+
+#about-page .logo{
+    width: 100%;
+}

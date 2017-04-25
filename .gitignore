@@ -12,3 +12,6 @@ jsconfig.json
 
 #Atom
 .editorconfig
+
+#Cordova
+/platforms/
