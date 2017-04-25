@@ -32,12 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.contato', {
-  url: '/contato',
-  abstract: true,
-  templateUrl: 'templates/contato.html',
-  controller: 'AppCtrl'
-})
+  
 
   .state('app.busca', {
     url: '/busca',
@@ -57,12 +52,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.contato', {
+      url: '/contato',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/contato.html',
+          controller: 'AppCtrl'
+        }
+      }
+    })
+
     .state('app.home', {
       url: '/home',
       views: {
         'menuContent': {
           templateUrl: 'templates/home.html',
-          controller: 'PlaylistsCtrl'
+          controller: 'AppCtrl'
         }
       }
     })
@@ -72,7 +77,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/local.html',
-        controller: 'PlaylistCtrl'
+        controller: 'AppCtrl'
       }
     }
   });
