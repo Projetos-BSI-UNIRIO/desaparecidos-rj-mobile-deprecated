@@ -3,6 +3,10 @@ ion-content{
     color: #FFF;
 }
 
+.main-content{
+    padding: 10px;
+}
+
 .bar.bar-stable, .nav-menu{
     background-color: #F7D30A;
 }
