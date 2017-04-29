@@ -1,32 +1,32 @@
-ion-content{
-    background-color: #000;
-    color: #FFF;
-}
-
-.main-content{
-    padding: 10px;
-}
-
 .bar.bar-stable, .nav-menu{
     background-color: #F7D30A;
 }
 
-#about-page .text-box{
+ion-content{
+    background-color: #FFF;
+    color: #000;
+}
+
+.main-content{
+    background-color: #000;
+}
+
+.main-content .text-box{
     font-variant: small-caps;
     text-align: center;
     padding: 5%;
 }
 
-#about-page .organization-name{
+.main-content .organization-name{
     font-size: 150%;
     font-weight: bold;
     color: #F7D30A;
 }
 
-#about-page .organization-info{
+.main-content .organization-info{
     color: #FFF;
 }
 
-#about-page .logo{
+.main-content .logo{
     width: 100%;
 }
