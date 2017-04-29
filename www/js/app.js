@@ -34,29 +34,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   
 
-  .state('app.busca', {
-    url: '/busca',
+  .state('app.search', {
+    url: '/search',
     views: {
       'menuContent': {
-        templateUrl: 'templates/busca.html'
+        templateUrl: 'templates/search.html'
       }
     },
     controller: "AlturaCtrl"
   })
 
-  .state('app.facial', {
-      url: '/facial',
+    .state('app.about', {
+      url: '/about',
       views: {
         'menuContent': {
-          templateUrl: 'templates/facial.html'
-        }
-      }
-    })
-    .state('app.contato', {
-      url: '/contato',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/contato.html',
+          templateUrl: 'templates/about.html',
           controller: 'AppCtrl'
         }
       }
@@ -72,11 +64,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-  .state('app.local', {
-    url: '/local',
+  .state('app.location', {
+    url: '/location',
     views: {
       'menuContent': {
-        templateUrl: 'templates/local.html',
+        templateUrl: 'templates/location.html',
         controller: 'AppCtrl'
       }
     }
