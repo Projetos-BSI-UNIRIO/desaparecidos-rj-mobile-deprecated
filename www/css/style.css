@@ -2,6 +2,14 @@
     background-color: #F7D30A;
 }
 
+.item{
+    padding: 8px;
+}
+
+.item .item-input{
+    width: 100%
+}
+
 ion-content{
     background-color: #FFF;
     color: #000;
@@ -29,4 +37,15 @@ ion-content{
 
 .main-content .logo{
     width: 100%;
+}
+
+.nav-menu .item{
+    background-color: transparent;
+    border-style: none;
+}
+
+.nav-menu .item-content{
+    padding: 8px;
+    background-color: transparent;
+    font-weight: bold;
 }

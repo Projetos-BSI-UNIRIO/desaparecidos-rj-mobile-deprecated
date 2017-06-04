@@ -5,85 +5,104 @@
 
   <ion-content>
 
-    <label class="item item-input">
-      <input type="text" ng-model="nome" name="nome" placeholder="Nome">
-    </label>
+    <ion-list>
 
-    <label class="item item-input">
-      <input type="number" ng-model="idade" name="idade" placeholder="Idade">
-    </label>
+      <ion-item class="item">
+        <input type="text" placeholder="Nome" name="nome" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="altura" name="altura" placeholder="Altura aproximada em metros">
-    </label>
+      <ion-item>
+        <input type="number" placeholder="Idade Aproximada" name="idade" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="cor da pele" name="cor-pele" placeholder="Cor da pele">
-    </label>
+      <ion-item>
+        <input type="number" placeholder="Altura Aproximada" name="altura" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="cor dos olhos" name="cor-olhos" placeholder="Altura aproximada em metros">
-    </label>
+      <ion-item>
+        <ion-label>Cor da Pele</ion-label>
+        <ion-select [(ng-model)]="cor-pele" class="item-input">
+          <ion-option>tipo1</ion-option>
+          <ion-option>tipo2</ion-option>
+          <ion-option>tipo3</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="cor do cabelo" name="cor-cabelo" placeholder="Cor do cabelo">
-    </label>
+      <ion-item>
+        <ion-label>Cor dos Olhos</ion-label>
+        <ion-select [(ng-model)]="cor-olhos" class="item-input">
+          <ion-option>tipo1</ion-option>
+          <ion-option>tipo2</ion-option>
+          <ion-option>tipo3</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="sexo" nome="sexo" placeholder="Sexo">
-    </label>
+      <ion-item>
+        <ion-label>Cor do Cabelo</ion-label>
+        <ion-select [(ng-model)]="cor-cabelo" class="item-input">
+          <ion-option>tipo1</ion-option>
+          <ion-option>tipo2</ion-option>
+          <ion-option>tipo3</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="nome do pai" name="nome-pai" placeholder="Nome do pai">
-    </label>
+      <ion-item>
+        <input type="text" placeholder="Sexo" name="sexo" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="nome da mãe" name="nome-mae" placeholder="Nome da mãe">
-    </label>
+      <ion-item>
+        <input type="text" placeholder="Nome do Pai" name="nome-do-pai" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="file" ng-model="imagem" name="img">
-    </label>
+      <ion-item>
+        <input type="text" placeholder="Nome da Mãe" name="nome-da-mae" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="data do desaparecimento" name="data-desaparecimento" placeholder="Data do desaparecimento">
-    </label>
+      <ion-item>
+        <input type="text" name="img" class="item-input">
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="local do desaparecimento" name="local-desaparecimento" placeholder="Local do desaparecimento">
-    </label>
+      <ion-item>
+        <input type="text" readonly name="data-desaparecimento" placeholder="Data do desaparecimento" (focus)="showDatePicker()" class="item-input">
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="cartazete" name="cartazete" placeholder="Cartazete">
-    </label>
+      <ion-item>
+        <input type="text" name="local-desaparecimento" placeholder="Local do desaparecimento" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="nome no cartazete" name="nome-cartazete" placeholder="Nome no cartazete">
-    </label>
+      <ion-item>
+        <input type="text" name="cartazete" placeholder="Cartazete" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="text" ng-model="comentário do desaparecimento" name="comentario-desaparecimento" placeholder="Comentário do desaparecimento">
-    </label>
+      <ion-item>
+        <input type="text" name="nome-cartazete" placeholder="Nome no cartazete" class="item-input" clearInput>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="checkbox" ng-model="tatuagem" name="tatuagem" value="Tatuagem">
-    </label>
+      <ion-item>
+        <input type="text" name="comentario-desaparecimento" placeholder="Comentário do desaparecimento" class="item-input">
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="checkbox" ng-model="cicatriz" name="cicatriz" value="Cicatriz">
-    </label>
+      <ion-item>
+        <ion-label>Tipo Físico</ion-label>
+        <ion-select [(ng-model)]="tipo-físico" class="item-input">
+          <ion-option>tipo1</ion-option>
+          <ion-option>tipo2</ion-option>
+          <ion-option>tipo3</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="checkbox" ng-model="amputado" name="amputado" value="Amputado">
-    </label>
+      <ion-item>
+        <ion-label>Informações Adicionais</ion-label>
+        <ion-select [(ng-model)]="extras" multiple="true" class="item-input">
+          <ion-option>Tatuagem</ion-option>
+          <ion-option>Cicatriz</ion-option>
+          <ion-option>Deficiente</ion-option>
+          <ion-option>Amputado</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <label class="item item-input">
-      <input type="checkbox" ng-model="deficiente" name="deficiente" value="Deficiente">
-    </label>
-
-    <label class="item item-input">
-      <input type="text" ng-model="tipo físico" name="tipo-fisico" value="Tipo físico">
-    </label>
+    </ion-list>
 
   </ion-content>
+
 </ion-view>
